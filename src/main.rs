@@ -44,7 +44,7 @@ fn start_cron() {
     let mut minutely_cron = Cron::new(local_tz);
 
     let _job_id = minutely_cron
-        .add_fn("* 0 * * * * *", send_notification)
+        .add_fn("0 0 * * * * *", send_notification)
         .unwrap();
 
     minutely_cron.start();
