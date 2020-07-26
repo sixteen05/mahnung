@@ -8,7 +8,7 @@ to send system notifications every hour.
 
  - Download the release
     ```bash
-    wget https://github.com/sixteen05/mahnung/releases/tag/<release_number>/mahnung
+    wget https://github.com/sixteen05/mahnung/releases/download/<release_number>/mahnung
     ```
  - Make it executable
     ```bash
@@ -21,7 +21,7 @@ to send system notifications every hour.
  - You will be notified every hour.
  - To stop the notifications, run
    ```bash
-   mahnung --stop
+   mahnung stop
    ```
 
 
