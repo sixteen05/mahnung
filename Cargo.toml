@@ -1,6 +1,6 @@
 [package]
 name = "mahnung"
-version = "0.4.1"
+version = "0.4.2"
 authors = ["Lalit Umbarkar <lalit.umbarkar9@gmail.com>"]
 edition = "2018"
 

@@ -231,7 +231,7 @@ dependencies = [
 
 [[package]]
 name = "mahnung"
-version = "0.4.1"
+version = "0.4.2"
 dependencies = [
  "chrono",
  "cron_tab",

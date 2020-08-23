@@ -97,10 +97,15 @@ fn write_pid_to_file() {
 fn send_notification() {
     // Get the current time
     let current_hour = Local::now().hour();
-    let _notification = Notification::new()
-        .summary(&format!("Its {} o'clock", current_hour))
-        // This will auto dismiss the notification
-        .timeout(100)
-        .show();
+    let current_min = Local::now().minute();
+    // Only show notification if current time is around 10m, else skip
+    // Happens when cron could not be triggered on time
+    if current_min < 10 {
+        let _notification = Notification::new()
+            .summary(&format!("Its {} o'clock", current_hour))
+            // This will auto dismiss the notification
+            .timeout(100)
+            .show();
+    }
 }
 
